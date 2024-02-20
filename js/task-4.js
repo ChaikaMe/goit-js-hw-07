@@ -6,17 +6,15 @@ function handleSubmit(event) {
     const form = event.target;
     const email = form.elements.email.value;
     const password = form.elements.password.value;
-    const result = {
-        email: "",
-        password: "",
-    }
 
-    if (email === "" || password === "") {
+    if (email.trim() === "" || password.trim() === "") {
     alert('All form fields must be filled in');
     }
     else {
-        result.email = email;
-        result.password = password;
+        const result = {
+            email: email,
+            password: password,
+        }
         console.log(result);
         form.reset();
     }
