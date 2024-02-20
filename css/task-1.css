@@ -1,0 +1,12 @@
+#categories {
+    padding: 24px;
+    background: white;
+    width: 392px;
+    height: 840px;
+}
+
+.item {
+    padding: 16px;
+    border-radius: 8px;
+    background: #F6F6FE;
+}
